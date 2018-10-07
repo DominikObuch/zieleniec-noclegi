@@ -1,0 +1,13 @@
+@keyframes navOpen{
+    to{
+        top: 0;
+    }
+}
+@keyframes navClose{
+    from{
+        top: 0;
+    }
+    to{
+        top: -30%;
+    }
+}

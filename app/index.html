@@ -2,21 +2,63 @@
 <html lang="pl">
 
 <head>
-    <meta charset="utf-8">
+
     <title>Agroturystyka Na Pograniczu </title>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#000000">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
 
     <meta name="description" content="główna strona Agroturystyki Na Pograniczu">
     <!--build:css css/styles.min.css-->
-    <link rel="stylesheet" href="css/main.css">
 
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/hamburgers.min.css">
     <!--endbuild-->
 
 </head>
 
 <body>
-<div class="test"></div>
+    <header class="header">
+        <h1 class="header__heading">Na Pograniczu</h1>
+        <h2 class="header__subheading"> Agroturystyka</h2>
+        <nav>
+            <button class="hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <ul class="header__list">
+                <li class="header__list--point"><a href="#">oferta</a></li>
+                <li class="header__list--point"><a href="#">cennik</a></li>
+                <li class="header__list--point"><a href="#">dojazd i kamery na żywo</a> </li>
+                <li class="header__list--point"><a href="#">galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slider">
+
+        <figure class="slider__image-cont">
+            <div class="slider__arrow-cont">
+                <div class="slider__arrow--left">
+                    <img class="slider__arrow-image" src="svg/_ionicons_svg_ios-arrow-back.svg" alt=" " />
+                </div>
+                <div class="slider__arrow--right">
+                    <img class="slider__arrow-image" src="svg/_ionicons_svg_ios-arrow-forward.svg" alt=" " />
+                </div>
+            </div>
+            <img class="slider__image" src="images/slider1.jpeg" alt="zdjęcie domu dla grup">
+
+
+
+
+        </figure>
+
 </body>
+
+
+
 <!--build:js js/index.min.js-->
 <script type="text/javascript" src="js/index.js"></script>
 <!--endbuild-->

@@ -24,7 +24,7 @@ gulp.task('browserSync', () => {
 })
 
 gulp.task('sass', () => {
-  return gulp.src('app/scss/**/*.scss')
+  return gulp.src('app/scss/main.scss')
     .pipe(sass()) // Converts Sass to CSS with gulp-sass
 
     .pipe(gulp.dest('app/css'))
@@ -46,6 +46,7 @@ gulp.task('watch', ['browserSync', 'sass'], () => {
 
 gulp.task('useref', () => {
   return gulp.src('app/*.html')
+    .pipe(sass())
     .pipe(useref())
     .pipe(gulpIf('*.css', cssnano()))
     .pipe(gulp.dest('dist'))
@@ -67,15 +68,7 @@ gulp.task('scripts', () => {
   .pipe(gulp.dest('dist/js'));
 })
 
-gulp.task('compress', function (cb) {
-  pump([
-        gulp.src('app/js/*.js'),
-        uglify(),
-        gulp.dest('dist/js')
-    ],
-    cb
-  );
-});
+
 
 gulp.task('prefixer', () =>
     gulp.src('app/css/*.css')
@@ -98,6 +91,6 @@ gulp.task('default', function (callback) {
 })
 
 gulp.task('build', function (callback) {
-  runSequence('clean:dist', ['default', 'images'] ,'prefixer', 'useref','scripts','compress' ,
+  runSequence('clean:dist', ['default', 'images'] ,'prefixer', 'useref','scripts',
     callback)
 })
