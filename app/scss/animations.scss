@@ -1,13 +1,70 @@
-@keyframes navOpen{
-    to{
+@keyframes navOpen {
+    to {
         top: 0;
     }
 }
-@keyframes navClose{
-    from{
+
+@keyframes navClose {
+    from {
         top: 0;
     }
-    to{
+
+    to {
         top: -30%;
     }
 }
+
+@keyframes sliderOutLeft {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: -100vw;
+    }
+}
+
+@keyframes sliderInLeft {
+    from {
+        left: 100vw;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes sliderOutRight {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 100vw;
+    }
+}
+
+@keyframes sliderInRight {
+    from {
+        left: -100vw;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+// @keyframes sliderLeft {
+//     from {
+//         transform: 
+//     }
+
+//     to {
+//         transform: translate(-100vw,0 );
+//     }
+// }
+// @keyframes sliderRight{
+//     to{
+//         transform: translate(100vw), 0;
+//     }
+// }

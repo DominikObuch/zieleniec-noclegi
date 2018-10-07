@@ -1,5 +1,9 @@
+body{
+    background: rgb(230,250,255);
+}
 .header {
     padding-bottom: 2rem;
+    
 
     &__heading {
         font-size: $font-size-r + 2vw;
