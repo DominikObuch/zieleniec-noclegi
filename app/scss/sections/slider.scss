@@ -1,17 +1,18 @@
 .slider {
     user-select: none;
-    width: 100vw;
+    width: 99.9vw;
     margin-left: -1rem;
     height: 56vw;
     position: relative;
 
     &__image {
 
-        width: 100%;
+        width: 98%;
         height: 56vw;
 
         &--pic {
             height: 56.3vw;
+            width: 100%;
             position: absolute;
             left: -100vw;
 
@@ -36,6 +37,7 @@
         &--right {
             width: 50%;
             display: flex;
+
         }
 
         &--right {
@@ -43,6 +45,7 @@
         }
 
         &--image {
+
             width: 3.5rem;
 
         }

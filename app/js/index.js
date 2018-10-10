@@ -22,20 +22,20 @@ hamburger.addEventListener("click", () => {
 //slider js
 let sliders = document.getElementsByClassName("slider__image--pic");
 let sliderActive = null;
-    for (let i = 0; i < sliders.length; i++) {
-        if (sliders[i].classList.contains("slider__image--pic-active")) {
-            sliderActive = i;
-        }
+for (let i = 0; i < sliders.length; i++) {
+    if (sliders[i].classList.contains("slider__image--pic-active")) {
+        sliderActive = i;
     }
-document.getElementsByClassName("slider__arrow--left")[0].addEventListener("click", () => {
-    
+}
+document.getElementsByClassName("slider__arrow--right")[0].addEventListener("click", () => {
+
     sliders[sliderActive].classList.toggle("sliderOutLeft")
     let asyncSliderActive = sliderActive;
     sliders[sliderActive].classList.remove("slider__image--pic-active")
     sliders[sliderActive].addEventListener("animationend", () => {
-        console.log(asyncSliderActive+ "async")
+        console.log(asyncSliderActive + "async")
         sliders[asyncSliderActive].classList.remove("sliderOutLeft");
-        
+
     })
     if (sliderActive == 2) {
         sliderActive = 0;
@@ -44,23 +44,23 @@ document.getElementsByClassName("slider__arrow--left")[0].addEventListener("clic
     }
     sliders[sliderActive].classList.add("slider__image--pic-active", "sliderInLeft");
     let asyncSliderActiveTwo = sliderActive;
-    sliders[sliderActive].addEventListener("animationend", remAnimSecond = ()=>{
-        
+    sliders[sliderActive].addEventListener("animationend", remAnimSecond = () => {
+
         sliders[asyncSliderActiveTwo].classList.remove("sliderInLeft")
     })
 })
 
 
 
-document.getElementsByClassName("slider__arrow--right")[0].addEventListener("click", () => {
-    
+document.getElementsByClassName("slider__arrow--left")[0].addEventListener("click", () => {
+
     sliders[sliderActive].classList.toggle("sliderOutRight")
     let asyncSliderActive = sliderActive;
     sliders[sliderActive].classList.remove("slider__image--pic-active")
     sliders[sliderActive].addEventListener("animationend", () => {
-        console.log(asyncSliderActive+ "async")
+        console.log(asyncSliderActive + "async")
         sliders[asyncSliderActive].classList.remove("sliderOutRight");
-        
+
     })
     if (sliderActive == 0) {
         sliderActive = 2;
@@ -69,8 +69,35 @@ document.getElementsByClassName("slider__arrow--right")[0].addEventListener("cli
     }
     sliders[sliderActive].classList.add("slider__image--pic-active", "sliderInRight");
     let asyncSliderActiveTwo = sliderActive;
-    sliders[sliderActive].addEventListener("animationend", remAnimSecond = ()=>{
-        
+    sliders[sliderActive].addEventListener("animationend", remAnimSecond = () => {
+
         sliders[asyncSliderActiveTwo].classList.remove("sliderInRight")
     })
 })
+
+//main 
+let article = document.getElementsByClassName("article__image");
+let articleCaption = document.getElementsByClassName("article__image--caption");
+
+let articleEvent = i => {
+    article[i].classList.toggle("article__blur")
+    articleCaption[i].classList.toggle("article__active");
+
+
+}
+
+
+for (let i = 0; i < article.length; i++) {
+    articleCaption[i].addEventListener("mouseover", ()=>{
+        articleEvent(i);
+    })
+    article[i].addEventListener("mouseover", () => {
+        articleEvent(i);
+    });
+    articleCaption[i].addEventListener("mouseout", ()=>{
+        articleEvent(i);
+    })
+    article[i].addEventListener("mouseout", () => {
+        articleEvent(i);
+    });
+}
