@@ -9,14 +9,12 @@ html {
 }
 
 body {
-    margin: 1rem;
     background: rgb(237,237,237);
 }
 
 @import "app/scss/variables.scss";
 @import "app/scss/fonts.scss";
 @import "app/scss/sections/header.scss";
-@import "app/scss/sections/slider.scss";
 @import "app/scss/sections/article.scss";
 @import "app/scss/sections/footer.scss";
 @import "app/scss/animations.scss";

@@ -13,7 +13,7 @@
     <!--build:css css/styles.min.css-->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-   
+
     <link rel="stylesheet" href="css/hamburgers.min.css">
     <link rel="stylesheet" href="css/main.css">
     <!--endbuild-->
@@ -22,8 +22,10 @@
 
 <body>
     <header class="header">
-        <h1 class="header__heading">Na Pograniczu</h1>
-        <h2 class="header__subheading"> Agroturystyka</h2>
+                <div class="header__background">
+            <img class="header__background--image" src="images/logo.jpg"></div>
+        <h1 class="header__caption header__heading">Na Pograniczu</h1>
+        <h2 class="header__caption header__subheading"> Agroturystyka</h2>
         <nav>
             <button class="hamburger hamburger--spin" type="button">
                 <span class="hamburger-box">
@@ -37,25 +39,9 @@
                 <li class="header__list--point"><a href="#">galeria</a></li>
             </ul>
         </nav>
+
     </header>
 
-    <div class="slider">
-
-        <div class="slider__image">
-            <div class="slider__arrow--cont">
-                <div class="slider__arrow--left">
-                    <img class="slider__arrow--image" src="svg/_ionicons_svg_ios-arrow-back.svg" alt=" " />
-                </div>
-                <div class="slider__arrow--right">
-                    <img class="slider__arrow--image" src="svg/_ionicons_svg_ios-arrow-forward.svg" alt=" " />
-                </div>
-            </div>
-            <img class="slider__image--pic " src="images/slider2.jpg" alt="zdjęcie krajobrazów">
-            <img class="slider__image--pic slider__image--pic-active " src="images/slider1.jpg" alt="zdjęcie domu dla grup">
-            <img class="slider__image--pic  " src="images/slider3.jpg" alt="zdjęcie domu">
-
-        </div>
-    </div>
     <main class="main">
         <section class="article">
             <figure class="article__image-cont"><a href="#"><img class="article__image" src="images/pokoje.jpg" alt="domek dla grup">
@@ -72,32 +58,33 @@
         </section>
 
         <section class="article">
-                <figure class="article__image-cont"><a href="#"><img class="article__image" src="images/malydomek.jpg" alt="domek dla grup">
-                        <figcaption class="article__image--caption">Kliknij i sam sprawdź</figcaption>
-                    </a></figure>
-                <h3 class="article__sub-heading">
-                    <a class="article__sub-heading--link" href="#"> Pokoje dla grup</a>
-                </h3>
-                <p class="article__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti excepturi
-                    dolor debitis repellat
-                    cum libero omnis fugit pariatur officiis qui aliquid mollitia quasi quod deserunt iure odio,
-                    dignissimos ipsa accusantium!</p>
-                <button class="article__button" type="button">Zobacz ofertę</button>
-            </section>
+            <figure class="article__image-cont"><a href="#"><img class="article__image" src="images/malydomek.jpg" alt="domek dla grup">
+                    <figcaption class="article__image--caption">Kliknij i sam sprawdź</figcaption>
+                </a></figure>
+            <h3 class="article__sub-heading">
+                <a class="article__sub-heading--link" href="#"> Pokoje dla grup</a>
+            </h3>
+            <p class="article__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti excepturi
+                dolor debitis repellat
+                cum libero omnis fugit pariatur officiis qui aliquid mollitia quasi quod deserunt iure odio,
+                dignissimos ipsa accusantium!</p>
+            <button class="article__button" type="button">Zobacz ofertę</button>
+        </section>
 
         <section class="article">
-                <figure class="article__image-cont"><a href="#"><img class="article__image" src="images/pokoje_dla_grup.png" alt="domek dla grup">
-                        <figcaption class="article__image--caption">Kliknij i sam sprawdź</figcaption>
-                    </a></figure>
-                <h3 class="article__sub-heading">
-                    <a class="article__sub-heading--link" href="#"> Pokoje dla grup</a>
-                </h3>
-                <p class="article__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti excepturi
-                    dolor debitis repellat
-                    cum libero omnis fugit pariatur officiis qui aliquid mollitia quasi quod deserunt iure odio,
-                    dignissimos ipsa accusantium!</p>
-                <button class="article__button" type="button">Zobacz ofertę</button>
-            </section>
+            <figure class="article__image-cont"><a href="#"><img class="article__image" src="images/pokoje_dla_grup.png"
+                        alt="domek dla grup">
+                    <figcaption class="article__image--caption">Kliknij i sam sprawdź</figcaption>
+                </a></figure>
+            <h3 class="article__sub-heading">
+                <a class="article__sub-heading--link" href="#"> Pokoje dla grup</a>
+            </h3>
+            <p class="article__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti excepturi
+                dolor debitis repellat
+                cum libero omnis fugit pariatur officiis qui aliquid mollitia quasi quod deserunt iure odio,
+                dignissimos ipsa accusantium!</p>
+            <button class="article__button" type="button">Zobacz ofertę</button>
+        </section>
 
     </main>
     <footer class="footer">

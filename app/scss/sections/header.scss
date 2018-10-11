@@ -1,27 +1,47 @@
 .header {
     padding-bottom: 1rem;
-    width: 90vw;
+    width: 100vw;
     position: relative;
     left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    &__background {
+
+        user-select: none;
+        overflow: hidden;
+        position: relative;
+
+        &--image {
+            width: 100%;
+            height: 24rem;
+            z-index: -1;
+            transform: scale(1.03);
+            position: relative;
+            filter: grayscale(80%) blur(2px) brightness(70%) contrast(90%);
+
+        }
+    }
+
+    &__caption {
+        color: white;
+        position: absolute;
+        transform: translateY(-20%);
+    }
 
     &__heading {
         font-size: $font-size-r + 2vw;
-        display: flex;
-        justify-content: center;
 
-        margin-left: 3rem;
         font-family: "Pacifico", cursive;
-        margin: $font-size-n - 1rem;
-        margin-top: 1.6rem;
+        margin: 0;
     }
 
     &__subheading {
+        margin-top: 10%;
+        margin-left: 2rem;
         text-align: center;
-
         font-size: $font-size-r - 1vw;
-        margin-left: 25vw;
-        margin-top: -.4rem;
 
         font-family: "Pacifico", cursive;
     }
@@ -37,14 +57,26 @@
         left: 0;
         background: white;
         border-bottom: 3px solid black;
-        height: 29.5vw;
-        padding: 2rem;
+        font-family: Raleway, Arial, sans-serif;
+        font-size: 1.2rem;
+        height: 15rem;
         top: -30%;
 
 
         &--point {
             font-size: $font-size-r - 1vw;
-
+            width: 100%;
+            text-transform: uppercase;
+            font-weight: 600;
+            line-height: 1.7rem;
+            height: 42px;
+            display: flex;
+            padding: 1rem;
+            justify-content: center;
+            border-bottom: 1px solid rgb(240,240,240);
+            &:first-child{
+                border-top: 1px solid rgb(240,240,240);
+            }
             a {
                 color: black;
                 text-decoration: none;
@@ -73,12 +105,19 @@
 
 }
 
+.decoration {
+
+    &__image {}
+
+}
+
 .hamburger {
     outline: none;
     position: fixed;
     z-index: 10;
-    height: 10rem;
-    top: -1rem;
-    left: .5rem;
+    transform: scale(0.6);
+    height: 7rem;
+    top: 0;
+    left: 0;
 
 }
