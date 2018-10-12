@@ -7,12 +7,11 @@
 }
 
 .article {
-    width: 90%;
     border-radius: 10px;
-    background: white; 
+    background: white;
     margin-top: 3rem;
     padding-bottom: 3rem;
-
+    width: 90%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -31,12 +30,7 @@
             font-size: $font-size-n;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             position: relative;
-            top: -30%;
-
-            webkit-any-link {
-                text-decoration: none;
-            }
-
+            top: -50%;
             display: flex;
             justify-content: center;
             color: white;
@@ -50,16 +44,16 @@
                 color: white;
             }
 
-            &:hover {}
         }
     }
 
     &__sub-heading {
         font-size: $font-size-n + 0.7rem;
         padding: 0 1rem;
-        font-family:"Source Sans Pro", Helvetica, sans-serif;
+        font-family: "Source Sans Pro", Helvetica, sans-serif;
         letter-spacing: .3rem;
         word-spacing: .9rem;
+
         &--link {
             color: black;
             text-decoration: none;
@@ -87,7 +81,7 @@
         word-spacing: .4rem;
         border-radius: 5px;
         padding: 1.5rem;
-        
+
         font-size: $font-size-n - 0.9rem;
     }
 

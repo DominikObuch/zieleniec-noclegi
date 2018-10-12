@@ -27,7 +27,9 @@
     &__caption {
         color: white;
         position: absolute;
-        transform: translateY(-20%);
+
+        transform: translate(-7px, -4vw);
+
     }
 
     &__heading {
@@ -64,7 +66,7 @@
 
 
         &--point {
-            font-size: $font-size-r - 1vw;
+            font-size: 12px;
             width: 100%;
             text-transform: uppercase;
             font-weight: 600;
@@ -73,14 +75,16 @@
             display: flex;
             padding: 1rem;
             justify-content: center;
-            border-bottom: 1px solid rgb(240,240,240);
-            &:first-child{
-                border-top: 1px solid rgb(240,240,240);
+            border-bottom: 1px solid rgb(240, 240, 240);
+            color: black;
+            text-decoration: none;
+            &:first-child {
+                border-top: 1px solid rgb(240, 240, 240);
             }
-            a {
-                color: black;
-                text-decoration: none;
 
+            &:hover {
+                background: rgb(230, 230, 230);
+                transition-duration: 0.6s;
             }
         }
 
@@ -105,19 +109,14 @@
 
 }
 
-.decoration {
-
-    &__image {}
-
-}
 
 .hamburger {
     outline: none;
     position: fixed;
     z-index: 10;
-    transform: scale(0.6);
-    height: 7rem;
-    top: 0;
-    left: 0;
+    transform: scale(0.8);
+    height: 3rem;
+    top: -0.6rem;
+    left: -1.4rem;
 
 }

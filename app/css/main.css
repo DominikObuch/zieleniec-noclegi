@@ -39,7 +39,7 @@ body {
   .header__caption {
     color: white;
     position: absolute;
-    transform: translateY(-20%); }
+    transform: translate(-7px, -4vw); }
   .header__heading {
     font-size: 7vw;
     font-family: "Pacifico", cursive;
@@ -66,7 +66,7 @@ body {
     height: 15rem;
     top: -30%; }
     .header__list--point {
-      font-size: 4vw;
+      font-size: 12px;
       width: 100%;
       text-transform: uppercase;
       font-weight: 600;
@@ -75,12 +75,14 @@ body {
       display: flex;
       padding: 1rem;
       justify-content: center;
-      border-bottom: 1px solid #f0f0f0; }
+      border-bottom: 1px solid #f0f0f0;
+      color: black;
+      text-decoration: none; }
       .header__list--point:first-child {
         border-top: 1px solid #f0f0f0; }
-      .header__list--point a {
-        color: black;
-        text-decoration: none; }
+      .header__list--point:hover {
+        background: #e6e6e6;
+        transition-duration: 0.6s; }
     .header__list--visible {
       display: flex;
       animation-duration: 1s;
@@ -98,10 +100,10 @@ body {
   outline: none;
   position: fixed;
   z-index: 10;
-  transform: scale(0.6);
-  height: 7rem;
-  top: 0;
-  left: 0; }
+  transform: scale(0.8);
+  height: 3rem;
+  top: -0.6rem;
+  left: -1.4rem; }
 
 .main {
   width: 100%;
@@ -110,11 +112,11 @@ body {
   align-items: center; }
 
 .article {
-  width: 90%;
   border-radius: 10px;
   background: white;
   margin-top: 3rem;
   padding-bottom: 3rem;
+  width: 90%;
   display: flex;
   align-items: center;
   flex-direction: column; }
@@ -129,12 +131,10 @@ body {
       font-size: 2rem;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       position: relative;
-      top: -30%;
+      top: -50%;
       display: flex;
       justify-content: center;
       color: white; }
-      .article__image--caption webkit-any-link {
-        text-decoration: none; }
     .article__image-cont {
       display: flex; }
       .article__image-cont a {
@@ -177,7 +177,7 @@ body {
 
 .footer {
   width: 100%;
-  height: 10rem;
+  height: 11.2rem;
   margin: 0;
   padding: 0; }
   .footer__heading {
@@ -204,6 +204,67 @@ body {
       padding-right: 1.5rem;
       white-space: nowrap; }
 
+@media (min-width: 500px) {
+  .header__background--image {
+    height: 30rem; }
+  .header__list--point {
+    font-size: 12px; }
+  .article__button {
+    width: 18rem;
+    white-space: nowrap;
+    padding: 1rem; }
+  .footer {
+    margin-top: 2rem; }
+    .footer__list--point {
+      font-size: 1.6rem; } }
+
+@media (min-width: 750px) {
+  .article {
+    width: 87%; } }
+
+@media (min-width: 1000px) {
+  .header {
+    flex-wrap: wrap;
+    width: 100%; }
+    .header__background--image {
+      height: 40rem; }
+    .header__heading {
+      font-size: 5rem;
+      transform: translate(-30px, -4rem); }
+    .header__list {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      height: 130%;
+      border: none;
+      border-bottom-left-radius: 7px;
+      border-bottom-right-radius: 7px;
+      white-space: nowrap;
+      width: 90vw; }
+      .header__list--point {
+        line-height: 2rem;
+        border: none;
+        border-left: 1px solid #dcd2dc; }
+        .header__list--point:first-child {
+          border: none; }
+    .header__subheading {
+      font-size: 3rem;
+      margin-top: 0;
+      transform: translate(5px, 3rem); }
+  .hamburger {
+    display: none; }
+  .main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  .article {
+    width: 40%;
+    margin: 1rem;
+    margin-top: 2.5rem; }
+    .article__double {
+      width: 90%; } }
+
 @keyframes navOpen {
   to {
     top: 0; } }
@@ -213,50 +274,3 @@ body {
     top: 0; }
   to {
     top: -30%; } }
-
-@keyframes sliderOutLeft {
-  from {
-    left: 0; }
-  to {
-    left: -100vw; } }
-
-@keyframes sliderInLeft {
-  from {
-    left: 100vw; }
-  to {
-    left: 0; } }
-
-@keyframes sliderOutRight {
-  from {
-    left: 0; }
-  to {
-    left: 100vw; } }
-
-@keyframes sliderInRight {
-  from {
-    left: -100vw; }
-  to {
-    left: 0; } }
-
-@keyframes shake-horizontal {
-  0%,
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0); }
-  10%,
-  30%,
-  50%,
-  70% {
-    -webkit-transform: translateX(-10px);
-    transform: translateX(-10px); }
-  20%,
-  40%,
-  60% {
-    -webkit-transform: translateX(10px);
-    transform: translateX(10px); }
-  80% {
-    -webkit-transform: translateX(8px);
-    transform: translateX(8px); }
-  90% {
-    -webkit-transform: translateX(-8px);
-    transform: translateX(-8px); } }
