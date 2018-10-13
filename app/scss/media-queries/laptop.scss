@@ -57,10 +57,14 @@
     .article {
         width: 40%;
         margin: 1rem;
+        height: 55rem;
         margin-top: 2.5rem;
-
+        &__button{
+            
+        }
         &__double {
             width: 90%;
+            height: 85rem;
         }
     }
 
