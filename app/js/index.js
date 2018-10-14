@@ -25,23 +25,23 @@ let article = document.getElementsByClassName("article__image");
 let articleCaption = document.getElementsByClassName("article__image--caption");
 
 let articleEvent = i => {
-    article[i].classList.toggle("article__blur")
+    article[i].classList.toggle("article__blur");
     articleCaption[i].classList.toggle("article__active");
 
 
-}
+};
 
 
 for (let i = 0; i < article.length; i++) {
     articleCaption[i].addEventListener("mouseover", ()=>{
         articleEvent(i);
-    })
+    });
     article[i].addEventListener("mouseover", () => {
         articleEvent(i);
     });
     articleCaption[i].addEventListener("mouseout", ()=>{
         articleEvent(i);
-    })
+    });
     article[i].addEventListener("mouseout", () => {
         articleEvent(i);
     });

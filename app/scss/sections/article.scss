@@ -1,4 +1,5 @@
-.main {
+.main,
+.main-s {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -17,12 +18,15 @@
     flex-direction: column;
 
 
+    &__image,
+    &__image-s {
 
-    &__image {
         width: 100%;
         border-top-left-radius: 5px;
         border-bottom: dotted 1px black;
         border-top-right-radius: 5px;
+
+        &-s {}
 
         &--caption {
             opacity: 0;
@@ -39,6 +43,8 @@
 
         &-cont {
             display: flex;
+
+            overflow: hidden;
 
             a {
                 color: white;
@@ -58,6 +64,7 @@
         &--link {
             color: black;
             text-decoration: none;
+
         }
     }
 

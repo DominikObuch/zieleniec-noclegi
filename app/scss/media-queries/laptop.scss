@@ -16,24 +16,34 @@
         }
 
         &__list {
-            position: relative;
+            position: absolute;
             display: flex;
             flex-direction: row;
-            align-content: center;
-            height: 130%;
+            height: 20%;
+            background: none;
             border: none;
-            border-bottom-left-radius: 7px;
-            border-bottom-right-radius: 7px;
+            width: 60rem;
             white-space: nowrap;
-            width: 90vw;
+            z-index: 10;
+            top: 0;
+            right: 3%;
+            left: unset;
 
             &--point {
+                font-size: $font-size-n - 0.4rem;
+                color: white;
                 line-height: 2rem;
                 border: none;
-                border-left: 1px solid rgb(220, 210, 220);
+                
                 &:first-child {
                     border: none;
                 }
+
+            &:hover {
+                background:transparent;
+                color: grey;
+                transition-duration: 0.6s;
+            }
             }
         }
 
@@ -48,27 +58,54 @@
         display: none;
     }
 
-    .main {
+    .main, .main-s {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
     }
-
+    .main-s{
+        width: 100rem;
+        margin: 0 auto;
+        
+    }
     .article {
         width: 40%;
         margin: 1rem;
-        height: 55rem;
-        margin-top: 2.5rem;
-        &__button{
+
+        height: 100%;
             
+        margin-top: 2.5rem;
+        &-s{
+            margin: 2rem 5%;
+            width: 40rem;
         }
+        &__image-s{
+            height: 25rem;
+            transform: scale(1);
+            transition: transform 0.5s;
+            
+            &:hover{
+                transition-duration: 0.5s;
+                transition-timing-function: ease-in-out;
+                transform: scale(1.2) rotate(2deg);
+            }
+        }
+        &__paragraph {
+            height: 15rem;
+            &-s{
+                height: 20rem;
+                padding: 3rem;
+            }
+            &--double{
+                height: 10rem;
+                padding: 2rem 7%;
+            }
+        }
+
         &__double {
-            width: 90%;
-            height: 85rem;
+            width: 81%;
+            height: 100%;
         }
     }
 
-    .footer {
-        &__list {}
-    }
 }
