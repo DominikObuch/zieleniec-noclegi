@@ -127,6 +127,8 @@ body {
     border-top-left-radius: 5px;
     border-bottom: dotted 1px black;
     border-top-right-radius: 5px; }
+    .article__image-s, .article__image-s-s {
+      height: 30rem; }
     .article__image--caption, .article__image-s--caption {
       opacity: 0;
       filter: none;
