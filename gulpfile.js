@@ -11,7 +11,7 @@ var concat = require('gulp-concat');
 var babili = require('gulp-babili');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
-const autoprefixer = require('gulp-autoprefixer');
+var autoprefixer = require('gulp-autoprefixer');
 
 
 gulp.task('browserSync', () => {
@@ -46,7 +46,7 @@ gulp.task('watch', ['browserSync', 'sass'], () => {
 
 gulp.task('useref', () => {
   return gulp.src('app/*.html')
-    .pipe(sass())
+    
     .pipe(useref())
     .pipe(gulpIf('*.css', cssnano()))
     .pipe(gulp.dest('dist'))

@@ -19,6 +19,7 @@
             position: absolute;
             display: flex;
             flex-direction: row;
+            padding-top: 2rem;
             height: 20%;
             background: none;
             border: none;
@@ -76,7 +77,6 @@
             
         margin-top: 2.5rem;
         &-s{
-            margin: 2rem 5%;
             width: 40rem;
         }
         &__image-s{
@@ -93,12 +93,16 @@
         &__paragraph {
             height: 15rem;
             &-s{
-                height: 20rem;
+                height: 23rem;
                 padding: 3rem;
             }
             &--double{
+
                 height: 10rem;
                 padding: 2rem 7%;
+                &-s{
+                    height: 35rem;
+                }
             }
         }
 

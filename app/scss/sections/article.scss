@@ -20,6 +20,7 @@
 
     &__image,
     &__image-s {
+        transition-duration: 0.3s;
 
         width: 100%;
         border-top-left-radius: 5px;
@@ -79,19 +80,19 @@
         font-family: "Source Sans Pro", Helvetica, sans-serif;
         text-align: justify;
         font-size: $font-size-n - 0.6rem;
+        
     }
 
     &__button {
         text-transform: uppercase;
         font-weight: 400;
-        width: 90%;
+        width: 100%;
         background: white;
         border: 2px solid rgb(21, 21, 21);
         letter-spacing: .3rem;
         word-spacing: .4rem;
         border-radius: 5px;
         padding: 1.5rem;
-
         font-size: $font-size-n - 0.9rem;
     }
 

@@ -1,15 +1,15 @@
 @keyframes navOpen {
     to {
-        top: 0;
+        right: 0;
     }
 }
 
 @keyframes navClose {
     from {
-        top: 0;
+        right: 0;
     }
 
     to {
-        top: -30%;
+        right: -80%;
     }
 }

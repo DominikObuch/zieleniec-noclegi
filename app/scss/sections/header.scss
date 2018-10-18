@@ -52,17 +52,17 @@
         position: fixed;
         font-family: 'Roboto Slab', serif;
         list-style-type: none;
-        display: none;
+        padding-top: 6rem;
+        
+        top: 0;
         flex-direction: column;
-        align-items: center;
-        width: 100%;
-        left: 0;
+        width: 80%;
+        height: 100vh;
+        right: -80%;
         background: white;
-        border-bottom: 3px solid black;
         font-family: Raleway, Arial, sans-serif;
         font-size: 1.2rem;
-        height: 15rem;
-        top: -30%;
+     
 
 
         &--point {
@@ -90,7 +90,7 @@
 
         &--visible {
             display: flex;
-            animation-duration: 1s;
+            animation-duration: 0.3s;
             animation-name: navOpen;
             z-index: 9;
 
@@ -100,7 +100,7 @@
         }
 
         &--invisible {
-            animation-duration: 1s;
+            animation-duration: 0.3s;
             animation-name: navClose;
             z-index: 9;
             display: flex;
@@ -116,7 +116,17 @@
     z-index: 10;
     transform: scale(0.8);
     height: 3rem;
-    top: -0.6rem;
-    left: -1.4rem;
+    top: 0.5rem;
+    right: -0.4rem;
+    &__background{
+        position: fixed;
+        width: 100vw;
+        z-index: 3;
+        display: flex;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.55)
+    }
 
 }
