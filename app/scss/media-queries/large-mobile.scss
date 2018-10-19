@@ -15,6 +15,16 @@
             white-space: nowrap;
             padding: 1rem;
         }
+        &--webcam{
+            padding: 0;
+            width: 40rem;
+            iframe{
+                width: 100%;
+            }
+            p{
+                padding: 0;
+            }
+        }
     }
     .footer{
         margin-top: 2rem;

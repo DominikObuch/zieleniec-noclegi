@@ -81,6 +81,7 @@
         }
         &__image-s{
             height: 25rem;
+            width: 40rem;
             transform: scale(1);
             transition: transform 0.5s;
             
@@ -107,8 +108,32 @@
         }
 
         &__double {
+            &-s{
+                width: 82%;
+                height: 500px;
+                display: flex;
+                .article__paragraph-s{
+                    margin: 0;
+                }
+            }
             width: 81%;
             height: 100%;
+        }
+        &--webcam{
+            padding: 0;
+            height: 22.5rem;
+            display: flex;
+            iframe{
+                border-top-left-radius: 9px;
+                border-top-right-radius: 9px;
+                height: 30rem;
+                width: 100%;
+            }
+            p{
+                position: absolute;
+                height: 3rem;
+                padding: 0;
+            }
         }
     }
 

@@ -120,13 +120,16 @@
     right: -0.4rem;
     &__background{
         position: fixed;
+        transition-duration: 4s;
+        transition-timing-function: ease-in-out;
+        animation-duration: 4s;
         width: 100vw;
         z-index: 3;
         display: flex;
         left: 0;
         top: 0;
         height: 100vh;
-        background: rgba(0, 0, 0, 0.55)
+        background: rgba(0, 0, 0, 0.55);
     }
 
 }

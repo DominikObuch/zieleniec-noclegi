@@ -11,7 +11,9 @@ html {
 body {
     background: rgb(237,237,237);
 }
-
+ol{
+    list-style-type: none;
+}
 @import "app/scss/variables.scss";
 @import "app/scss/sections/header.scss";
 @import "app/scss/sections/article.scss";
