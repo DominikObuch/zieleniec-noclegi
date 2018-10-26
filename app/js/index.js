@@ -1,9 +1,6 @@
 //hamburger js 
 let hamburger = document.getElementsByClassName("hamburger")[0];
 let hamburgerState = false;
-document.addEventListener("click", function () {
-    console.log(event.target)
-});
 let hamburgerBg = document.createElement("div");
 hamburgerBg.classList.add("hamburger__background");
 
